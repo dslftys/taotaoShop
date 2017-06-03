@@ -1,7 +1,7 @@
 package com.taotao.controller;
 
 import com.taotao.service.ItemCatService;
-import com.taotao.utils.TreeNode;
+import com.taotao.common.pojo.TreeNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,12 +14,13 @@ import java.util.List;
  * Created by Victor on 2017/6/3.
  */
 @Controller
+@RequestMapping("/item/cat")
 public class ItemCatController {
 
     @Autowired
     private ItemCatService itemCatService;
 
-    @RequestMapping("/item/cat/list")
+    @RequestMapping("/list")
     @ResponseBody
     public List<TreeNode> getItemCatList(@RequestParam(value="id", defaultValue="0")Long parentId) {
         List<TreeNode> list = itemCatService.getItemCatList(parentId);

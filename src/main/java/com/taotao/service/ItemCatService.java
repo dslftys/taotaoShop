@@ -1,6 +1,6 @@
 package com.taotao.service;
 
-import com.taotao.utils.TreeNode;
+import com.taotao.common.pojo.TreeNode;
 
 import java.util.List;
 

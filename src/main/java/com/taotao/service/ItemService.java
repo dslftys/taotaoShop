@@ -1,7 +1,7 @@
 package com.taotao.service;
 
 import com.taotao.pojo.TbItem;
-import com.taotao.utils.EUDataGridResult;
+import com.taotao.common.pojo.EUDataGridResult;
 
 /**
  * Created by Victor on 2017/6/3.

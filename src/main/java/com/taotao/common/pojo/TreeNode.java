@@ -1,4 +1,4 @@
-package com.taotao.utils;
+package com.taotao.common.pojo;
 
 /**
  * Created by Victor on 2017/6/3.
