@@ -1,12 +1,12 @@
 package com.taotao.service;
 
+import com.taotao.common.pojo.PictureResult;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.Map;
 
 /**
  * Created by Victor on 2017/6/3.
  */
 public interface PictureService {
-    Map uploadPicture(MultipartFile uploadFile);
+    PictureResult uploadPicture(MultipartFile uploadFile);
 }
